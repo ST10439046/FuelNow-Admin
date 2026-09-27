@@ -2360,20 +2360,6 @@ truck:
         // Vehicle
         // --------------------------------------------------------------------
 
-        const {
-          data:
-            vehicleData,
-        } =
-          await supabase
-            .from('vehicles')
-            .select(
-              'vehicle_id, registration_number, make, model, capacity_litres'
-            )
-            .eq(
-              'driver_id',
-              row.driver_id
-            )
-            .maybeSingle();
 
 
         const driverName =

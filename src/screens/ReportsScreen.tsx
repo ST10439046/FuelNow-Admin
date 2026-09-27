@@ -43,12 +43,6 @@ interface DriverRow {
   sosIncidents: number;
 }
 
-function formatZAR(value: number) {
-  return `R ${Number(value || 0).toLocaleString("en-ZA", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  })}`;
-}
 
 function formatDate(value: string | null | undefined) {
   if (!value) {

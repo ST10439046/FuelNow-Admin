@@ -26,7 +26,7 @@ export default function VehiclesScreen() {
   const [vehicles, setVehicles] = useState<VehicleModel[]>([]);
   const [drivers, setDrivers] = useState<DriverOption[]>([]);
 
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
 

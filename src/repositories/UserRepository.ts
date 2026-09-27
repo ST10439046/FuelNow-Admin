@@ -1,10 +1,7 @@
 import { CustomerApiClient } from '../services/apiClient';
 import { supabase } from '../services/supabase';
 import type{
-  User,
-  Customer,
   Address,
-  RewardAccount,
 } from '../types/database';
 
 
@@ -507,7 +504,6 @@ public async addAddress(
    * not a saved customer payment method.
    */
   public async addPaymentMethod(
-    paymentMethod: Omit<PaymentMethodModel, 'id'>
   ): Promise<PaymentMethodModel> {
     throw new Error(
       'Saved payment methods are not yet supported by CustomerApiClient. ' +
